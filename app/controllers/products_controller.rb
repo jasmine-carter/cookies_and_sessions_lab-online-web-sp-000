@@ -1,5 +1,4 @@
 class ProductsController < ApplicationController
-  helper
 
   def index
     cart = cart
