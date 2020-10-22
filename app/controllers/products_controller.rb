@@ -1,8 +1,8 @@
 class ProductsController < ApplicationController
-
+  helper
 
   def index
-
+    binding.pry
   end
 
   def add
