@@ -4,8 +4,12 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def cart
-    binding.pry
-    @cart = session[:cart] || []
-    @cart
+    if session[:cart].present
+      @cart = session[:cart] || []
+      @cart
+    else
+      @cart = []
+      session[:cart] = @cart
+    end
   end
 end
