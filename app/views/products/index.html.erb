@@ -1,7 +1,9 @@
 <h1> Products </h1>
 
+<%cart.each do |product|%>
+  <li><%=product %></li>
+<%end%>
 
 <h2>Add something to your cart</h2>
 
-<%= binding.pry %>
 <h2> What's currently in your cart? </h2>
