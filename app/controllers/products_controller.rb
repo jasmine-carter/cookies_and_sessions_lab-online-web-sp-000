@@ -5,7 +5,7 @@ class ProductsController < ApplicationController
   end
 
   def add
-    binding.pry
+    @item = params[:product]
     cart << @item.id
   end
 
