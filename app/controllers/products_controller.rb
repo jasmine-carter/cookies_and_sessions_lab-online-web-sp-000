@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   helper
 
   def index
-    binding.pry
+    cart = cart
   end
 
   def add
