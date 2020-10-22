@@ -1,7 +1,9 @@
 <h1> Products </h1>
-<%=binding.pry%>
-<%cart.each do |product|%>
+
+<%if !cart.empty? %>
+  <%cart.each do |product|%>
   <li><%=product %></li>
+  <%end%>
 <%end%>
 
 <%= form_tag ({controller: 'products', action: 'add', method: 'POST'}) do %>
