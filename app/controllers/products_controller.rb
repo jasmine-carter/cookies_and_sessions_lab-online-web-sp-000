@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
 
   def add
     @item = params[:product]
-    cart << @item.id
+    cart << @item
   end
 
 end
